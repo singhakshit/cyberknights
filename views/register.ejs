@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body class="b">
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../pics/ChatGPT Image Apr 7, 2025, 07_02_44 PM.png" alt="himachal map"></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/register">Registration</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Places
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/manali">Manali</a></li>
+                  <li><a class="dropdown-item" href="/shimla">Shimla</a></li>
+                  <li><a class="dropdown-item" href="/dharamshala">Dharamshala</a></li>
+                  <li><a class="dropdown-item" href="/kullu">Kullu</a></li>
+                  <li><a class="dropdown-item" href="/chamba">Chamba</a></li>
+                  <li><a class="dropdown-item" href="/spiti">Spiti Valley</a></li>
+                  <li><a class="dropdown-item" href="/solan">Solan</a></li>
+                  <li><a class="dropdown-item" href="/lahaul">Lahaul Valley</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/feedback">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/guide">Tour Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h2>Enter your details</h2>
+  <div class="container">
+   <form class="row g-3" action="/shimla" method="POST">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="inputEmail4" name="f_name">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="inputPassword4" name="l_name">
+    </div>
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputemail" placeholder="username@gmail.com(email you used to sign in)" name="email">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option value="andhra_pradesh">Andhra Pradesh</option>
+        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+        <option value="assam">Assam</option>
+        <option value="bihar">Bihar</option>
+        <option value="chhattisgarh">Chhattisgarh</option>
+        <option value="goa">Goa</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="haryana">Haryana</option>
+        <option value="himachal_pradesh">Himachal Pradesh</option>
+        <option value="jharkhand">Jharkhand</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="kerala">Kerala</option>
+        <option value="madhya_pradesh">Madhya Pradesh</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="manipur">Manipur</option>
+        <option value="meghalaya">Meghalaya</option>
+        <option value="mizoram">Mizoram</option>
+        <option value="nagaland">Nagaland</option>
+        <option value="odisha">Odisha</option>
+        <option value="punjab">Punjab</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="sikkim">Sikkim</option>
+        <option value="tamil_nadu">Tamil Nadu</option>
+        <option value="telangana">Telangana</option>
+        <option value="tripura">Tripura</option>
+        <option value="uttar_pradesh">Uttar Pradesh</option>
+        <option value="uttarakhand">Uttarakhand</option>
+        <option value="west_bengal">West Bengal</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Pin</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <label for="inputMode" class="form-label">Mode</label>
+      <select name="mode" class="form-select" required>
+        <option value="personal">Personal Conveyance</option>
+        <option value="flight">Flight</option>
+        <option value="train">Train</option>
+      </select>
+    </div>
+    <div class="col-md-12">
+      <label for="inputnumber" class="form-label">Enter vehicle/ticket number</label>
+      <input type="text" class="form-control" id="inputnumber" name="number">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-success">Register</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.navbar-brand img{
+  height: 50px;
+  width: 50px;
+}
+.c1 {
+  background-color: rgb(244, 236, 216);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.form-control{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100px;
+}
+.container-fluid{
+    text-align: justify;
+    /* text-align-last: center; */
+    /* background-color: rgb(244, 236, 216); */
+  }
+  .c{
+    text-align:justify;
+    display: flex;
+    gap: 10px;
+  }
+  .d{
+    text-align: justify;
+    display: flex;
+    gap: 10px;
+  }
+  .e{
+    text-align: justify;
+    display: flex;
+    gap: 10px;
+
+  }
+  .f{
+    text-align: justify;
+    display: flex;
+    gap: 10px;
+  }
+
+ 
+  .container h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container h4{
+    margin-bottom: 20px;
+  }
+  .d4{
+    display: flex;
+    gap: 10px;
+  }
+  .container img{
+    height: 320px;
+    width: 320px;
+  }
+  .container h3{
+    margin-top: 40px;
+}
+.container h4{
+    margin-top: 40px;
+}
+  

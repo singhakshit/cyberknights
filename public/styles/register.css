@@ -1,0 +1,31 @@
+.navbar-brand img{
+    height: 50px;
+    width: 50px;
+}
+.container-fluid {
+    background-color: rgb(244, 236, 216);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.b h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.container{
+    background-color: rgb(244, 236, 216);
+    border-radius: 8px;
+}
+.btn-success{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.r{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+#t{
+    margin-top: 20px;
+}
