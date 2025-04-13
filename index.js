@@ -94,10 +94,6 @@ app.post("/reviews",async (req,res)=>{
         res.status(500).send("An error occurred");
     }
 });
-const routes = [
-    "Manali", "Chamba", "Dharamshala", "Kullu", "Lahaul", 
-    "Shimla", "Solan", "Spiti", "guide", "contact"
-];
 app.get("/feedback",(req,res)=>{
     res.render("feedback.ejs");
 });
@@ -107,6 +103,10 @@ app.get("/reviews",async (req,res)=>{
         data : result.rows,
     });
 });
+const routes = [
+    "Manali", "Chamba", "Dharamshala", "Kullu", "Lahaul", 
+    "Shimla", "Solan", "Spiti", "guide", "contact"
+];
 routes.forEach(route => {
     app.get(`/${route.toLowerCase()}`, (req, res) => {
         res.sendFile(`C:/Users/akshi/abc2/public/${route}.html`);
