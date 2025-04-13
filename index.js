@@ -1,6 +1,12 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 const app = express();
 const port = 3000;
@@ -15,7 +21,7 @@ const db = new pg.Client({
 db.connect();
   
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname,"public")));
 
 
 app.get("/",(req,res)=>{
@@ -73,7 +79,7 @@ app.post("/shimla", async (req, res) => {
             "INSERT INTO contact(id,first_name,last_name,mode,number) VALUES($1,$2,$3,$4,$5)",
             [id, fname, lname, mode, no]
         );
-        res.sendFile("C:/Users/akshi/abc2/public/Shimla.html");
+        res.sendFile(path.join(__dirname, 'public', 'Shimla.html'));
     } catch (err) {
         console.error(err);
         res.status(500).send("An error occurred");
@@ -109,7 +115,7 @@ const routes = [
 ];
 routes.forEach(route => {
     app.get(`/${route.toLowerCase()}`, (req, res) => {
-        res.sendFile(`C:/Users/akshi/abc2/public/${route}.html`);
+        res.sendFile(path.join(__dirname, "public", `${route}.html`));
     });
 });
 app.listen(port,()=>{
